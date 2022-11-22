@@ -30,7 +30,7 @@ class NaoMove:
     def __init__(self, duration=None, preconditions=None, postconditions=None):
         self.duration = duration
         self.preConditions = preconditions if preconditions is not None else {}
-        self.postconditions = postconditions if postConditions is not None else {}
+        self.postconditions = postconditions if postconditions is not None else {}
 
 
 def main(robot_ip, port):
