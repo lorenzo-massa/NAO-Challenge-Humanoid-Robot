@@ -27,9 +27,9 @@ class NaoMove:
     This class describes the information
     of a single move.
     """
-    def __init__(self, duration=None, postConditions=None, postconditions=None):
+    def __init__(self, duration=None, preconditions=None, postconditions=None):
         self.duration = duration
-        self.postConditions = postConditions if postConditions is not None else {}
+        self.preConditions = preconditions if preconditions is not None else {}
         self.postconditions = postconditions if postConditions is not None else {}
 
 
