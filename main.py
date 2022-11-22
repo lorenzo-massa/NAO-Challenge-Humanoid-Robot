@@ -36,35 +36,37 @@ class NaoMove:
 def main(robot_ip, port):
     # TODO: win the challenge ;)
     # The following ones are the moves made available:
-    moves = {'StandUp':       NaoMove(8.35,  {'standing': False}, {'standing': True}),
-             'AirGuitar':     NaoMove(4.10,   {'standing': True},  {'standing': True}),
-             'ArmDance':      NaoMove(10.42, {'standing': True},  {'standing': True}),
-             'BlowKisses':    NaoMove(4.58,  {'standing': True},  {'standing': True}),
-             'Bow':           NaoMove(3.86,   {'standing': True},  {'standing': True}),
-             'DiagonalRight': NaoMove(2.56,  {'standing': True},  {'standing': True}),
-             'DanceMove':     NaoMove(6.13,  {'standing': True},  {'standing': True}),
-             'SprinklerL':    NaoMove(4.14,   {'standing': True},  {'standing': True}),
-             'SprinklerR':    NaoMove(4.36,  {'standing': True},  {'standing': True}),
-             'RightArm':      NaoMove(9.19,  None, None),
-             'TheRobot':      NaoMove(6.10,   {'standing': True},  {'standing': True}),
-             'ComeOn':        NaoMove(3.62,   {'standing': True},  {'standing': True}),
-             'StayingAlive':  NaoMove(5.90,   {'standing': True},  {'standing': True}),
-             'Rhythm':        NaoMove(2.95,  {'standing': True},  {'standing': True}),
-             'PulpFiction':   NaoMove(5.8,   {'standing': True},  {'standing': True}),
-             'Wave':          NaoMove(3.72,  None, None),
-             'Glory':         NaoMove(3.28,  None, None),
-             'Clap':          NaoMove(4.10,  None, None),
-             'Joy':           NaoMove(4.50,  None, None)}
+    moves = {
+            '1-Rotation_handgun_object':    NaoMove(5.87,   None,  None),
+            '2-Right_arm':                  NaoMove(9.46,  None,  None),
+            '3-Double_movement':            NaoMove(10.14,  {'standing': True},  {'standing': True}),
+            '4-Arms_opening':               NaoMove(11.73,  {'standing': True},  {'standing': True}),
+            '5-Union_arms':                 NaoMove(7.08,   None,  None),
+            '7-Move_forward':               NaoMove(4.12,   {'standing': True},  {'standing': True}),
+            '8-Move_backward':              NaoMove(4.60,   {'standing': True},  {'standing': True}),
+            '9-Diagonal_left':              NaoMove(3.21,   {'standing': True},  {'standing': True}),
+            '10-Diagonal_right':            NaoMove(3.02,   {'standing': True},  {'standing': True}),
+            'BlowKisses':                   NaoMove(4.28,   None,  None),
+            'AirGuitar':                    NaoMove(4.18,   {'standing': True},  {'standing': True}),
+            'DanceMove':                    NaoMove(6.16,   {'standing': True},  {'standing': True}),
+            'Rhythm':                       NaoMove(3.02,   {'standing': True},  {'standing': True}),
+            'SprinklerL':                   NaoMove(4.14,   {'standing': True},  {'standing': True}),
+            'SprinklerR':                   NaoMove(4.17,   {'standing': True},  {'standing': True}),
+            'StandUp':                      NaoMove(8.31,   {'standing': False}, {'standing': True}),
+            'Wave':                         NaoMove(3.72,  None, None),
+            'Glory':                        NaoMove(3.54,  None, None),
+            'Clap':                         NaoMove(4.13,  None, None),
+            'Joy':                          NaoMove(4.39,  None, None)}
 
     # The following is the order we chose for the mandatory positions:
-    startingPosition = ('M_StandInit',       NaoMove(1.60))
-    Mandatory = [('M_WipeForehead', NaoMove(4.48)),
-                     ('M_Stand',        NaoMove(2.32)),
-                     ('M_Hello',        NaoMove(4.34)),
-                     ('M_Sit',          NaoMove(9.84)),
-                     ('M_SitRelax',     NaoMove(3.92)),
-                     ('M_StandZero',    NaoMove(1.4))]
-    Final_pos = ('M_Crouch',       NaoMove(1.32))
+    startingPosition = ('14-StandInit',    NaoMove(1.60))
+    Mandatory = [('WipeForehead', NaoMove(4.64)),
+                     ('11-Stand',     NaoMove(2.32)),
+                     ('Hello',        NaoMove(4.38)),
+                     ('16-Sit',       NaoMove(9.7), None, {'standing': False}),
+                     ('17-SitRelax',  NaoMove(3.92, None, {'standing': False})),
+                     ('15-StandZero', NaoMove(2.48))]
+    Final_pos = ('6-Crouch',     NaoMove(2.24))
     pos_list = [startingPosition, *Mandatory, Final_pos]
     Steps_num = len(pos_list) - 1
 
