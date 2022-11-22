@@ -14,6 +14,7 @@ sudo apt-get install vlc git
   2. Download the repository:
 ```bash
 git clone https://github.com/lorenzo-massa/FirenzeReggio_Team
+```
   3. Get the needed Python3 tools:
 ```bash
 cd FirenzeReggio_Team
