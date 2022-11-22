@@ -136,7 +136,7 @@ def main(robot_ip, port):
     
     # Dance execution
     print("\nDANCE EXEC:")
-    play_song("Redefinition - Infernal.mp3")
+    play_song("infernal-redefinition.mp3")
     start = time.time()
     do_moves(solution, robot_ip, port)
     end = time.time()
