@@ -1,8 +1,8 @@
 # FirenzeReggio_Team
 
 Authors:
-Lorenzo Massa		lorenzo.massa6@studio.unibo.it
-Alessandro Folloni	alessandro.folloni2@studio.unibo.it
+* Lorenzo Massa		lorenzo.massa6@studio.unibo.it
+* Alessandro Folloni	alessandro.folloni2@studio.unibo.it
 
 ## Instructions
 Starting from a working instance of the "NaoUbuntu" virtual machine:
@@ -13,8 +13,7 @@ sudo apt-get install vlc git
 ```
   2. Download the repository:
 ```bash
-git clone https://github.com/FirenzeReggio_Team
-```
+git clone https://github.com/lorenzo-massa/FirenzeReggio_Team
   3. Get the needed Python3 tools:
 ```bash
 cd FirenzeReggio_Team
