@@ -4,12 +4,12 @@ import math
 import subprocess
 import time
 
-#import vlc
+import vlc
 
 
 def play_song(song_name):
-    #p = vlc.MediaPlayer(song_name)
-    #p.play()
+    p = vlc.MediaPlayer(song_name)
+    p.play()
     pass
 
 

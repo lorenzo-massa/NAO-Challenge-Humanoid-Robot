@@ -10,7 +10,7 @@ def main(robotIP, port):
 	except Exception, e:
 		print("Could not create a proxy to ALTextToSpeech")
 
-	ttsProxy.say("HELLO")
+	#ttsProxy.say("HELLO")
 
 	names = list()
 	times = list()
