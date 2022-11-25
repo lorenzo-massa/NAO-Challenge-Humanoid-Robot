@@ -39,11 +39,10 @@ python3 main.py localhost port
 deactivate
 ```
 
-**To run the script, Choreograph must be opened with a proper virtual robot available for external connections**
 **Please, remember to do the following steps before launching the script:**
-  1. **open Choreograph**
-  2. **go to Edit->Preferences and open the 'General' tab**
-  3. **set 'Motor speed (%)' to 100**
-  4. **switch to the 'Virtual Robot' tab**
-  5. **select the 'NAO H25 (V40)' as the 'Robot model'**
-  6. **click on the 'OK' button in the bottom right of the modal window**
+  1. **Open Choreograph**
+  2. **Go to Edit->Preferences and open the 'General' tab**
+  3. **Set 'Motor speed (%)' to 100**
+  4. **Switch to the 'Virtual Robot' tab**
+  5. **Select the 'NAO H25 (V40)' as the 'Robot model'**
+  6. **Click on the 'OK' button in the bottom right of the modal window**
